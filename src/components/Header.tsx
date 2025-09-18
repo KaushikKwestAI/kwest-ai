@@ -1,8 +1,6 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import Button from './ui/button';
@@ -28,67 +26,67 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-10">
           {/* Logo */}
-          <Link href="/">
+          <a href="/">
             <div className={`font-bold text-2xl flex items-center gap-2 ${
               scrolled ? 'text-indigo-900' : 'text-gray-900'
             }`}>
               <span className="w-8 h-8 bg-indigo-600 rounded-md flex items-center justify-center text-white">K</span>
               <span>KwestAI</span>
             </div>
-          </Link>
+          </a>
           
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             <NavItem title="Features" scrolled={scrolled} hasDropdown>
               <div className="py-2 grid grid-cols-2 gap-2 w-[400px]">
-                <Link href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
                   <div className="font-medium mb-1">AI-Powered Testing</div>
                   <div className="text-xs text-gray-500">Advanced intelligent test automation</div>
-                </Link>
-                <Link href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
+                </a>
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
                   <div className="font-medium mb-1">Smart Assertions</div>
                   <div className="text-xs text-gray-500">Natural language test verification</div>
-                </Link>
-                <Link href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
+                </a>
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
                   <div className="font-medium mb-1">Visual Testing</div>
                   <div className="text-xs text-gray-500">Pixel-perfect UI validation</div>
-                </Link>
-                <Link href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
+                </a>
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
                   <div className="font-medium mb-1">Cross-Browser Testing</div>
                   <div className="text-xs text-gray-500">Test across all popular browsers</div>
-                </Link>
+                </a>
               </div>
             </NavItem>
             <NavItem title="Solutions" scrolled={scrolled} hasDropdown>
               <div className="py-2">
-                <Link href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
                   <div className="font-medium mb-1">For QA Teams</div>
                   <div className="text-xs text-gray-500">Streamline testing workflows</div>
-                </Link>
-                <Link href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
+                </a>
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
                   <div className="font-medium mb-1">For Developers</div>
                   <div className="text-xs text-gray-500">Ship code with confidence</div>
-                </Link>
-                <Link href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
+                </a>
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
                   <div className="font-medium mb-1">For Product Teams</div>
                   <div className="text-xs text-gray-500">Release better products faster</div>
-                </Link>
+                </a>
               </div>
             </NavItem>
             <NavItem title="Resources" scrolled={scrolled} hasDropdown>
               <div className="py-2">
-                <Link href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
                   <div className="font-medium mb-1">Documentation</div>
                   <div className="text-xs text-gray-500">Comprehensive guides and tutorials</div>
-                </Link>
-                <Link href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
+                </a>
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
                   <div className="font-medium mb-1">Blog</div>
                   <div className="text-xs text-gray-500">Latest news and best practices</div>
-                </Link>
-                <Link href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
+                </a>
+                <a href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
                   <div className="font-medium mb-1">Case Studies</div>
                   <div className="text-xs text-gray-500">See how others use KwestAI</div>
-                </Link>
+                </a>
               </div>
             </NavItem>
             <NavItem title="Pricing" scrolled={scrolled} href="/pricing" />
@@ -96,14 +94,14 @@ const Header = () => {
         </div>
         
         <div className="flex items-center gap-4">
-          <Link 
+          <a 
             href="/login" 
             className={`hidden sm:block text-sm font-medium transition-colors ${
               scrolled ? 'text-gray-600 hover:text-indigo-700' : 'text-white hover:text-indigo-200'
             }`}
           >
             Log In
-          </Link>
+          </a>
           <Button 
             href="/demo"
             variant={scrolled ? "primary" : "ghost"}
@@ -130,7 +128,7 @@ const NavItem: React.FC<NavItemProps> = ({ title, href, hasDropdown = false, scr
   
   return (
     <div className="relative group" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
-      <Link 
+      <a 
         href={href || '#'} 
         className={`flex items-center gap-1 font-medium ${
           scrolled ? 'text-gray-700 hover:text-indigo-700' : 'text-white hover:text-indigo-200'
@@ -139,7 +137,7 @@ const NavItem: React.FC<NavItemProps> = ({ title, href, hasDropdown = false, scr
       >
         {title}
         {hasDropdown && <ChevronDown className="w-4 h-4" />}
-      </Link>
+      </a>
       
       {hasDropdown && (
         <motion.div 

@@ -1,21 +1,17 @@
-"use client";
-import Header from "@/components/Header";
-import { useEffect, useState } from "react";
-import HeroSection from "@/components/sections/HeroSection";
-import ProblemStatementSection from "@/components/sections/ProblemStatementSection";
-import StatsSection from "@/components/sections/StatsSection";
-import FeatureTabsSection from "@/components/sections/FeatureTabsSection";
-import WorkflowSection from "@/components/sections/WorkflowSection";
-import LifecycleSimulationSection from "@/components/sections/LifecycleSimulationSection";
-import AdvantageSection from "@/components/sections/AdvantageSection";
-import UseCasesSection from "@/components/sections/UseCasesSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
-import CTASection from "@/components/sections/CTASection";
-import Footer from "@/components/Footer";
-// Legacy sections kept (commented) in case we want to reintroduce / merge specific content:
-// import FeaturesSection from "@/components/sections/FeaturesSection";
-// import AIFeaturesSection from "@/components/sections/AIFeaturesSection";
-// import AllFeaturesSection from "@/components/sections/AllFeaturesSection";
+import React, { useEffect, useState } from 'react';
+import './App.css';
+import Header from "./components/Header";
+import HeroSection from "./components/sections/HeroSection";
+import ProblemStatementSection from "./components/sections/ProblemStatementSection";
+import StatsSection from "./components/sections/StatsSection";
+import FeatureTabsSection from "./components/sections/FeatureTabsSection";
+import WorkflowSection from "./components/sections/WorkflowSection";
+import LifecycleSimulationSection from "./components/sections/LifecycleSimulationSection";
+import AdvantageSection from "./components/sections/AdvantageSection";
+import UseCasesSection from "./components/sections/UseCasesSection";
+import TestimonialsSection from "./components/sections/TestimonialsSection";
+import CTASection from "./components/sections/CTASection";
+import Footer from "./components/Footer";
 
 // Simple navigation dots for slide sections
 const sections = [
@@ -70,7 +66,7 @@ function SlideNav() {
   );
 }
 
-export default function Home() {
+function App() {
   return (
     <div className="font-sans" id="top">
       <Header />
@@ -83,13 +79,11 @@ export default function Home() {
         <section id="lifecycle" className="min-h-screen"><LifecycleSimulationSection /></section>
         <section id="usecases" className="min-h-screen"><UseCasesSection /></section>
         <section id="testimonials" className="min-h-screen"><TestimonialsSection /></section>
-        {/* Legacy sections temporarily removed from flow to avoid repetition with new narrative-driven components */}
-        {/* <FeaturesSection /> */}
-        {/* <AIFeaturesSection /> */}
-        {/* <AllFeaturesSection /> */}
         <section id="cta" className="min-h-screen"><CTASection /></section>
       </main>
       <Footer />
     </div>
   );
 }
+
+export default App;
