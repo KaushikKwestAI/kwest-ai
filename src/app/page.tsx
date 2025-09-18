@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import HeroSection from "@/components/sections/HeroSection";
 import ProblemStatementSection from "@/components/sections/ProblemStatementSection";
 import StatsSection from "@/components/sections/StatsSection";
-import FeatureTabsSection from "@/components/sections/FeatureTabsSection";
-import WorkflowSection from "@/components/sections/WorkflowSection";
 import LifecycleSimulationSection from "@/components/sections/LifecycleSimulationSection";
 import AdvantageSection from "@/components/sections/AdvantageSection";
 import UseCasesSection from "@/components/sections/UseCasesSection";
