@@ -1,8 +1,21 @@
-# Getting Started with Create React App
+# Kwest AI Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React landing page for Kwest AI built with Create React App and deployed using GitHub Pages.
 
-## Available Scripts
+## 🚀 Live Site
+
+The site is automatically deployed to GitHub Pages at: `https://kwest-ai.github.io/kwest-ai`
+
+## 🛠️ Tech Stack
+
+- **React 19** with TypeScript
+- **Tailwind CSS** for styling
+- **Framer Motion** for animations
+- **Radix UI** components
+- **GitHub Actions** for CI/CD
+- **GitHub Pages** for hosting
+
+## 📦 Available Scripts
 
 In the project directory, you can run:
 
