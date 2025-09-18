@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     userScalable: false,
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: "/kwest-ai/favicon.ico",
+    shortcut: "/kwest-ai/favicon.ico",
   }
 };
 
