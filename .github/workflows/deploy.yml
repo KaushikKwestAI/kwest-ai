@@ -2,7 +2,7 @@ name: Deploy React App to Cloud Run
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
 env:
   PROJECT_ID: rapid-strength-464107-g0
